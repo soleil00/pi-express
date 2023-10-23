@@ -1,0 +1,9 @@
+.balance-container h3 {
+  text-align: center;
+}
+
+.balances {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
