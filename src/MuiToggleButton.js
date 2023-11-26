@@ -1,6 +1,7 @@
 import {
   DesktopAccessDisabledTwoTone,
   InsertCommentOutlined,
+  MonetizationOn,
   Send,
 } from "@mui/icons-material";
 import { Box, Paper, ToggleButton, ToggleButtonGroup } from "@mui/material";
@@ -29,7 +30,7 @@ export const MuiToggleButton = () => {
           <InsertCommentOutlined />
         </ToggleButton>
         <ToggleButton value="deposit">
-          <DesktopAccessDisabledTwoTone />
+          <MonetizationOn />
         </ToggleButton>
       </ToggleButtonGroup>
     </Box>
