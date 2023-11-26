@@ -30,7 +30,7 @@ export const MuiDialog = () => {
         <DialogTitle>confirm deletion</DialogTitle>
         <DialogContent>
           <DialogContentText>
-            u are about to delete this element from dom do u confirm
+            u are about to delete this element from dom do u confirm yes soleil
           </DialogContentText>
           <form>
             <TextField
