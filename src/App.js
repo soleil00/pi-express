@@ -1,22 +1,19 @@
-import Home from "./pages/Home";
-import "./app.css";
 import { Route, Routes } from "react-router-dom";
-import P2P from "./components/p2p/P2P";
-import HomeComponent from "./components/home/HomeComponent";
-import TradeForm from "./components/p2p/TradeForm";
-import P2pHome from "./components/p2p/P2pHome";
+import HomeRoute from "./routes/HomeRoute";
+import LoginRoute from "./routes/LoginRoute";
+import SignUpRoute from "./routes/SignUpRoute";
+import { Box } from "@mui/material";
+// import { LocalizationProvider } from "@mui/lab";
 
 function App() {
   return (
-    <div className="app">
+    <Box>
       <Routes>
-        <Route path="/" element={<HomeComponent />} />
-        <Route path="/p2p">
-          <Route index element={<P2pHome />} />
-          <Route path="/p2p/create-ad" element={<P2P />} />
-        </Route>
+        <Route path="/" element={<HomeRoute />} />
+        <Route path="/login" element={<LoginRoute />} />
+        <Route path="/register" element={<SignUpRoute />} />
       </Routes>
-    </div>
+    </Box>
   );
 }
 
